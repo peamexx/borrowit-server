@@ -28,6 +28,11 @@ app.get('/aladin', async (req, res) => {
   }
 });
 
+app.get('/ping', (req, res) => {
+  res.status(200).send('OK');
+});
+
+
 const PORT = 4000;
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
